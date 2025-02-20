@@ -20,4 +20,36 @@ This project uses a simulated dataset taken from Kaggle which was generated usin
 * Utilize XGBoost to evaluate and identify key identifiers of fraudulent behaviors
 * Calculate feature importance metrics 
 
+## New Additions: Naive Bayes Implementation
+
+We have now added a dedicated Naive Bayes classifier as part of this project. Below is a brief overview of the changes and how to use them:
+
+1. New File 
+   - A file named `naive_bayes.py` (or similarly named) demonstrates how we preprocess our data and train a **Gaussian Naive Bayes** classifier.  
+   - It includes a function `naive_bayes_example()` that does the following:
+     1. Loads and preprocesses `fraudTrain.csv`  
+     2. Splits the data into training and validation sets (80/20)  
+     3. Trains the Naive Bayes model and prints metrics (Accuracy, Precision, Recall, F1)  
+     4. Loads and preprocesses `fraudTest.csv`  
+     5. Evaluates the same model on the test data, printing final metrics  
+
+2. Usage Instructions  
+   - To run the Naive Bayes script:
+     ```bash
+     python naive_bayes.py
+     ```
+     Make sure your `fraudTrain.csv` and `fraudTest.csv` files are in the correct location (or adjust file paths if needed).  
+
+3. Model Performance
+   - In our initial runs, the Naive Bayes model achieved high overall accuracy but showed moderate precision and recall, reflecting the class imbalance typically found in fraud detection scenarios.  
+   - Future enhancements (e.g., threshold tuning, oversampling with SMOTE, feature engineering) can further boost performance.  
+
+By adding the Naive Bayes model, we aim to complement existing methods (e.g., Logistic Regression, Random Forest, and XGBoost) and compare how each performs under severe class imbalance.
+
+---
+
+
+
+
+
 
