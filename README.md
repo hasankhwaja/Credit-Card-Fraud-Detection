@@ -44,7 +44,27 @@ We have now added a dedicated Naive Bayes classifier as part of this project. Be
    - In our initial runs, the Naive Bayes model achieved high overall accuracy but showed moderate precision and recall, reflecting the class imbalance typically found in fraud detection scenarios.  
    - Future enhancements (e.g., threshold tuning, oversampling with SMOTE, feature engineering) can further boost performance.  
 
-By adding the Naive Bayes model, we aim to complement existing methods (e.g., Logistic Regression, Random Forest, and XGBoost) and compare how each performs under severe class imbalance.
+By adding the Naive Bayes model, we aim to complement existing methods (e.g., Random Forest, and XGBoost) and compare how each performs under severe class imbalance.
+
+## Random Forest Classifier 
+
+We addad a random forest classifer as a part of this project. Below is a brief overview.
+   - Preprocesses data for both training and test sets
+   - Includes feature importance
+   - Fine tuned hyperparameters
+   - Best estimator randomized search
+   - 3-Fold cross validation over 15 iterations
+   - Random oversampling to reduce data imbalances
+
+Results
+   Accuracy - 0.997 
+   Precision - 0.684
+   Recall - 0.687 
+   F1-Score - 0.685
+
+Model Performance
+   - The random forest classifier achieved high accuracy like all other tested models as well as balanced results across both the precision and recall metrics
+   - Oversampling techniques have been shown to increase overall F-1 score
 
 ---
 ## Application
