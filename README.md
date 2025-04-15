@@ -20,7 +20,7 @@ This project uses a simulated dataset taken from Kaggle which was generated usin
 * Utilize XGBoost to evaluate and identify key identifiers of fraudulent behaviors
 * Calculate feature importance metrics 
 
-## New Additions: Naive Bayes Implementation
+## Naive Bayes Implementation
 
 We have now added a dedicated Naive Bayes classifier as part of this project. Below is a brief overview of the changes and how to use them:
 
