@@ -57,10 +57,10 @@ We addad a random forest classifer as a part of this project. Below is a brief o
    - Random oversampling to reduce data imbalances
 
 Results
-   Accuracy - 0.997 
-   Precision - 0.684
-   Recall - 0.687 
-   F1-Score - 0.685
+   - Accuracy - 0.997 
+   - Precision - 0.684
+   - Recall - 0.687 
+   - F1-Score - 0.685
 
 Model Performance
    - The random forest classifier achieved high accuracy like all other tested models as well as balanced results across both the precision and recall metrics
