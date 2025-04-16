@@ -66,6 +66,23 @@ Model Performance
    - The random forest classifier achieved high accuracy like all other tested models as well as balanced results across both the precision and recall metrics
    - Oversampling techniques have been shown to increase overall F-1 score
 
+## Neural Network 
+
+We added a Neural Network, an overview can be found below 
+   - Features a sequential feedforward network
+        - Three dense layers (64, ReLu; 32, ReLu; 1, sigmoid)
+        - Adam with learning rate = 0.001
+        - Epochs = 10, batch size = 512
+        - The model predicts almost all samples as non-fraud
+  - Features an LSTM
+       - Two LSTM layers follow by one dense layer and an output layer
+       - High recall: the model is successfully identifying most fraud cases
+       - Improved precision compared to oversampled feedforward model
+   
+Model Performance
+   - This model prioratizes recall in that it is able to accuratly identify cases of fraud only among all fraudulent transactions
+   - This model has an exceedingly long runtime which limits its ability to be used within a real time system
+
 ---
 ## Application
 
